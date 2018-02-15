@@ -6,7 +6,13 @@ import (
 
 func ConvertStringToInt(x string, y string) (n1 int64, n2 int64, err error) {
 	n1, err = strconv.ParseInt(x, 10, 64)
+	if err != nil {
+		return 0, 0, err
+	}
 	n2, err = strconv.ParseInt(y, 10, 64)
+	if err != nil {
+		return 0, 0, err
+	}
 	if err != nil {
 		return 0, 0, err
 	}
