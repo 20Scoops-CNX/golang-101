@@ -5,11 +5,15 @@ import (
 	"os"
 
 	"github.com/gorilla/handlers"
+	"github.com/subosito/gotenv"
 )
 
-var httpPort = os.Getenv("PORT")
+func init() {
+	gotenv.Load()
+}
 
 func main() {
+	var httpPort = os.Getenv("HTTP_PORT")
 	http.HandleFunc("/", homeHandle)
 	http.ListenAndServe(":"+httpPort, handlers.LoggingHandler(os.Stdout, http.DefaultServeMux))
 }
