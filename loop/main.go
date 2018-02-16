@@ -23,4 +23,10 @@ func main() {
 		fmt.Printf("index: %d, value: %s\n", index, fruits[index])
 		index++
 	}
+
+	var position = 0
+	for flag := true; flag; flag = (position != 100) {
+		fmt.Printf("position: %d\n", (position + 1))
+		position++
+	}
 }
