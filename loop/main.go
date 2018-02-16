@@ -15,6 +15,7 @@ func main() {
 		fmt.Printf("index: %d, value: %s\n", index, value)
 	}
 
+	// while
 	var index int
 	for {
 		if index == len(fruits) {
@@ -24,6 +25,7 @@ func main() {
 		index++
 	}
 
+	// do-while
 	var position = 0
 	for flag := true; flag; flag = (position != 100) {
 		fmt.Printf("position: %d\n", (position + 1))
