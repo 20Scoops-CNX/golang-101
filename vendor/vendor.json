@@ -1,8 +1,7 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [
-		{
+	"package": [{
 			"checksumSHA1": "dvabztWVQX8f6oMLRyv4dLH+TGY=",
 			"origin": "github.com/stretchr/testify/vendor/github.com/davecgh/go-spew/spew",
 			"path": "github.com/davecgh/go-spew/spew",
